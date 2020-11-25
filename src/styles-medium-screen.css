@@ -32,4 +32,62 @@
         vertical-align: middle;
         transform: translate(0vh, 0vh);
     }
+    .okta_logo {
+        width: 11vh;
+        height: auto;
+        transform: translate(10vh, -4.8vh);
+    }
+    .login_seperator {
+        text-align: center;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        opacity: 0.5;
+        font-size: 15px;
+        color: #e6e6e6;
+    }
+    .okta_button {
+        width: 40vh !important;
+        margin-left: 10vh !important;
+        height: 6vh;
+    }
+    .okta_text {
+        text-align: left;
+        margin-left: 9vh;
+    }
+    .login>button {
+        font-family: "Asap", sans-serif;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 80px;
+        border: 0;
+        padding: 10px 0;
+        margin-top: 10px;
+        margin-left: 24vh;
+        border-radius: 5px;
+        background-color: #1976d2;
+        -webkit-transition: background-color 300ms;
+        -moz-transition: background-color 300ms;
+        transition: background-color 300ms;
+    }
+    .login {
+        overflow: hidden;
+        background-color: #1d3044;
+        padding: 40px 30px 30px 30px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+        -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+        transition: transform 300ms, box-shadow 300ms;
+        box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+    }
 }
