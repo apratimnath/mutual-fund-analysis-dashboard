@@ -1,6 +1,14 @@
-# MfAnalysisDashboard
+# Mutual Fund Analysis Dashboard
+## Angular Dashboard to visualize personalized Mutual Fund data
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+
+## Node server
+
+Follow the following steps to deploy using a node server -
+1. Build using `ng build --prod`
+2. Navigate to the root folde
+3. Run `node server.js`
 
 ## Development server
 
