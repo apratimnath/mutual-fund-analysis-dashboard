@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles-medium-screen.css",
+              "src/styles-small-screen.css"
             ],
             "scripts": []
           },

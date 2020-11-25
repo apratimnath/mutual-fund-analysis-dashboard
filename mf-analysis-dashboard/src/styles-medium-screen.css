@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Responsive Styles */
+
+@media screen and (max-width: 767px) {
+    .card-container>*:not(.circle-link), .terminal {
+        width: 100%;
+    }
+    .card:not(.highlight-card) {
+        height: 16px;
+        margin: 8px 0;
+    }
+    .card.highlight-card span {
+        margin-left: 72px;
+    }
+    svg#rocket-smoke {
+        right: 120px;
+        transform: rotate(-5deg);
+    }
+    .dash_logo {
+        width: 4vh;
+        height: auto;
+        margin-right: -5vh;
+    }
+    .heading_text {
+        font-size: 18px;
+    }
+    .footer_icons {
+        color: black;
+        font-size: 21px;
+        text-align: center;
+        vertical-align: middle;
+        transform: translate(0vh, 0vh);
+    }
+}

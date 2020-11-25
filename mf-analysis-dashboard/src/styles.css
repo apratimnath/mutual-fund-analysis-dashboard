@@ -115,8 +115,8 @@ svg.material-icons:not(:last-child) {
 }
 
 .card.highlight-card {
-    background-color: #1976d2;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     font-weight: 600;
     border: none;
     width: auto;
@@ -251,28 +251,25 @@ svg#clouds {
     width: 1920px;
 }
 
-/* Responsive Styles */
-
-@media screen and (max-width: 767px) {
-    .card-container>*:not(.circle-link), .terminal {
-        width: 100%;
-    }
-    .card:not(.highlight-card) {
-        height: 16px;
-        margin: 8px 0;
-    }
-    .card.highlight-card span {
-        margin-left: 72px;
-    }
-    svg#rocket-smoke {
-        right: 120px;
-        transform: rotate(-5deg);
-    }
+.welcome_text {
+    font-size: 20px;
+    transform: translate(0vh, 0.4vh);
 }
 
-@media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-        display: none;
-        visibility: hidden;
-    }
+.dash_logo {
+    width: 6vh;
+    height: auto;
+    margin-right: -6vh;
+}
+
+.heading_text {
+    font-size: 37px;
+}
+
+.footer_icons{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    vertical-align: middle;
+    transform: translate(0vh, 0.3vh);
 }
