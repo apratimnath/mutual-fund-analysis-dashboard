@@ -18,5 +18,3 @@ app.get('/*', function (req, res) {
 });
 
 app.listen(process.env.PORT || 9800);
-
-console.log(`Mutual Fund Aanalysis Dashboard listening on port ${port}!`);
