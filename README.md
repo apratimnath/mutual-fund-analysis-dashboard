@@ -25,5 +25,40 @@ The app is created and deployed in the following way
 3. The node server fetches the app from built dist and server the contents.
 4. The node application is deployed onto Heroku.
 
+## Version Details
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+
+## Node server
+
+Follow the following steps to deploy using a node server -
+1. Build using `ng build --prod`
+2. Navigate to the root folde
+3. Run `node server.js`
+
+## Development server
+Navigate to `mf-analysis-dashboard` subfolder.
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+Navigate to `mf-analysis-dashboard` subfolder.
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+Navigate to `mf-analysis-dashboard` subfolder.
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+Navigate to `mf-analysis-dashboard` subfolder.
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+Navigate to `mf-analysis-dashboard` subfolder.
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
 ## Dashboards and structure
 ### To be updated soon!
