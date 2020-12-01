@@ -15,7 +15,18 @@ import { BusyConfig, NgBusyModule } from 'ng-busy';
 import { RegisterNewUserComponent } from './components/register-new-user/register-new-user.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule, NotifierOptions } from 'angular-notifier';
+import { LoginMiddlewareComponent } from './components/login-middleware/login-middleware.component';
+import {
+  OKTA_CONFIG,
+  OktaAuthModule
+} from '@okta/okta-angular';
 
+const oktaConfig = {
+  issuer: 'https://dev-553241.okta.com/oauth2/default',
+  clientId: '0oa1htbkqwij85dcR4x7',
+  redirectUri: window.location.origin + '/implicit/callback',
+  pkce: true
+}
 /**
  * Custom angular notifier options
  */
@@ -66,7 +77,8 @@ const customNotifierOptions: NotifierOptions = {
     LandingDashboardComponent,
     NavbarComponent,
     HomeComponent,
-    RegisterNewUserComponent
+    RegisterNewUserComponent,
+    LoginMiddlewareComponent
   ],
   imports: [
     BrowserModule,
@@ -77,11 +89,13 @@ const customNotifierOptions: NotifierOptions = {
     NgBusyModule,
     ReactiveFormsModule,
     FormsModule,
+    OktaAuthModule,
     NotifierModule.withConfig(customNotifierOptions)
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AppInterceptorService, multi: true },
-    { provide: BusyConfig, useFactory: busyConfigFactory }
+    { provide: BusyConfig, useFactory: busyConfigFactory },
+    { provide: OKTA_CONFIG, useValue: oktaConfig }
   ],
   bootstrap: [AppComponent],
   entryComponents: [

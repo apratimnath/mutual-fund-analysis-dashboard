@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   //This method will call the component wich will have Okta Auth Guard --. Redirect To Okta and navigate to dashboard
   //For now, directlt navigating to dashboard
   verifyOkta() {
-    this.router.navigate(['../dashboard'], { relativeTo: this.route });
+    this.router.navigate(['../login-middleware'], { relativeTo: this.route });
   }
 
   //Open the dialog to register
