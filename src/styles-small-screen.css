@@ -96,4 +96,30 @@
         transform: translate(-3vh, 0vh);
         cursor: pointer;
     }
+    .register_button {
+        position: fixed;
+        bottom: 2vh;
+        right: 2vh;
+    }
+    .register-form-full-width {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .register_div {
+        margin-top: 2vh;
+    }
+    .register_form_heading {
+        font-size: 19px;
+        opacity: 0.9;
+        margin-bottom: 1vh;
+    }
+    .register_form_heading i {
+        margin-right: 1vw;
+    }
+    .sign_up_buttons {
+        float: right;
+    }
+    .sign_up_buttons button {
+        margin-right: 1vh;
+    }
 }

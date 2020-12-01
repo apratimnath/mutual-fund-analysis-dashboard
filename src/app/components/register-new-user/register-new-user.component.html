@@ -1,0 +1,76 @@
+<div class="register_form_heading">
+    <i class="fa fa-user-plus" aria-hidden="true"></i>
+    New User Registration
+</div>
+
+<mat-tab-group [(selectedIndex)]="selectedIndex">
+    <mat-tab label="Basic Details">
+        <div class="register_div">
+            <mat-form-field class="register-form-full-width">
+                <mat-label>First Name</mat-label>
+                <input type="text" matInput [(ngModel)]="firstName" placeholder="Ex. John" required>
+                <mat-hint>Should not contain spaces!</mat-hint>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Last Name</mat-label>
+                <input type="text" matInput [(ngModel)]="lastName" placeholder="Ex. Doe" required>
+                <mat-hint>Should not contain spaces!</mat-hint>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [(ngModel)]="email" placeholder="Ex. john.doe@example.com" required>
+                <mat-hint>Should be a valid format!</mat-hint>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Mobile</mat-label>
+                <input type="number" matInput [(ngModel)]="mobileNumber" placeholder="Ex. 0123456789" required>
+                <mat-hint>Do not include country code!</mat-hint>
+            </mat-form-field>
+        </div>
+    </mat-tab>
+    <mat-tab label="Additional Details">
+        <div class="register_div">
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Country</mat-label>
+                <input type="text" matInput [formControl]="country" placeholder="Ex. India" [matAutocomplete]="auto">
+                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of countryFilteredOptions | async" [value]="option">
+                        {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Preferred Language</mat-label>
+                <input type="text" matInput [formControl]="langPref" placeholder="Ex. English" [matAutocomplete]="auto1">
+                <mat-autocomplete autoActiveFirstOption #auto1="matAutocomplete">
+                    <mat-option *ngFor="let option of languageFilteredOptions | async" [value]="option">
+                        {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Secondary Email</mat-label>
+                <input type="email" matInput [(ngModel)]="secondaryEmail" placeholder="Ex. john.doe@example.com">
+                <mat-hint>Should be a valid format!</mat-hint>
+            </mat-form-field>
+            <mat-form-field class="register-form-full-width">
+                <mat-label>Seconday Contact</mat-label>
+                <input type="number" matInput [(ngModel)]="secondaryMobile" placeholder="Ex. 0123456789">
+                <mat-hint>Do not include country code!</mat-hint>
+            </mat-form-field>
+        </div>
+    </mat-tab>
+</mat-tab-group>
+<div class="sign_up_buttons">
+    <button mat-fab color="warn" aria-label="No, Thanks" (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+    </button>
+    <button *ngIf="selectedIndex == 0" mat-fab color="accent" aria-label="Proceed to Next Tab"
+        (click)="selectedIndex = 1">
+        <mat-icon>navigate_next</mat-icon>
+    </button>
+    <button *ngIf="selectedIndex == 1" [disabled]="!firstName || !lastName || !email || !mobileNumber" mat-fab
+        aria-label="Register" (click)=createUserObject()>
+        <mat-icon>check</mat-icon>
+    </button>
+</div>
