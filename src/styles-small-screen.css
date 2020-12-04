@@ -35,11 +35,11 @@
     .okta_logo {
         width: 11vh;
         height: auto;
-        transform: translate(7vh, -3.8vh);
+        transform: translate(8vh, -4vh);
     }
     .login_seperator {
         text-align: center;
-        margin-top: 1vh;
+        margin-top: 2vh;
         margin-bottom: 1vh;
         opacity: 0.5;
         font-size: 15px;
@@ -53,7 +53,7 @@
     .okta_text {
         text-align: left;
         margin-left: 5vh;
-        transform: translate(0px, 8px);
+        transform: translate(0px, 6px);
     }
     .login>button {
         font-family: "Asap", sans-serif;
@@ -130,5 +130,12 @@
         transform: rotateZ(45deg);
         margin-top: 75%;
         margin-left: 45%;
+    }
+    .login_title {
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 5vh;
+        text-align: center;
     }
 }

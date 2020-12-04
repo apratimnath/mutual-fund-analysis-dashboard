@@ -298,6 +298,7 @@ svg#clouds {
 .okta_text {
     text-align: left;
     margin-left: 9vh;
+    transform: translate(0px, 1px);
 }
 
 .login {
@@ -583,8 +584,16 @@ body {
     }
 }
 
-.loader_container{
+.loader_container {
     width: 100%;
     height: 100%;
     background-color: #1d3044;
+}
+
+.login_title {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5vh;
+    text-align: center;
 }

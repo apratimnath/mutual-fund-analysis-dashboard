@@ -11,6 +11,9 @@ import { RegisterNewUserComponent } from '../register-new-user/register-new-user
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  appTitle:string = "Personal Finance Analysis Dashboard";
+  userName:string;
+  password:string;
 
   constructor(
     private router: Router,
