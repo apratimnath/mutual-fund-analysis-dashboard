@@ -1,6 +1,6 @@
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 @Injectable({
@@ -13,7 +13,7 @@ export class MutualFundService {
   ) { }
 
   //Get the daily change data for landing dashboard
-  getInitialData() {
+  getInitialData(): Observable<any> {
     return this.http.get(sessionStorage.getItem("backendBaseURL") + "/api/v1/connect-gspread", {
       observe: "response"
     }).pipe(

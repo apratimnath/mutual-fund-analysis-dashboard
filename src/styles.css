@@ -597,3 +597,34 @@ body {
     margin-bottom: 5vh;
     text-align: center;
 }
+
+.home_icons_large_card {
+    width: 6vh;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.home_card_text {
+    margin-right: 1vw;
+    font-size: 15px;
+}
+
+.change_arrow {
+    /* font-size: 12px; */
+}
+
+.numeric_change {
+    font-size: 12px;
+    margin-left: 0.5vw;
+}
+
+.home_icons_small_card {
+    width: 9vh;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.numeric_change_small {
+    font-size: 15px;
+    margin-left: 0.5vw;
+}

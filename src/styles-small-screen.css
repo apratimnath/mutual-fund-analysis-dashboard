@@ -138,4 +138,36 @@
         margin-bottom: 5vh;
         text-align: center;
     }
+    .home_icons_large_card {
+        width: 5vh;
+        height: auto;
+        position: absolute;
+        transform: translate(-33vw, 0vh);
+    }
+    .home_card_text {
+        margin-right: 1vw;
+        font-size: 18px;
+    }
+    .numeric_change {
+        font-size: 18px;
+        margin-left: 0.5vw;
+        position: absolute;
+        transform: translate(19vh, 0vw);
+    }
+    .change_arrow {
+        position: absolute;
+        transform: translate(27vw, 0.25vh);
+    }
+    .home_icons_small_card {
+        width: 9vh;
+        height: auto;
+        position: absolute;
+    }
+    
+    .numeric_change_small {
+        font-size: 18px;
+        margin-left: 0.5vw;
+        position: absolute;
+        transform: translate(19vh, 0vw);
+    }
 }
